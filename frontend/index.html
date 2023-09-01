@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Campus Marketplace - Home</title>
+
+    
+
 </head>
 <body>
-    <h1>Hello </h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                CAMPUS MARKETPLACE
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+                  </style>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="feedback.html">Feedback</li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#" id="checkout-button">Checkout</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rubik+Iso&display=swap');
+              </style>
+            <h1>Welcome to Campus Marketplace</h1>
+            <p>Buy and sell items within your campus community.</p>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+    
+    
+    <main>
+        <div class="product-row">
+            <section class="product" data-product-id="1">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Description of Product 1.</p>
+                <p>Price: Rs. 100</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="product1.html" class="cta-button">View Details</a>
+                
+            </section>
+            
+            <section class="product" data-product-id="2">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Description of Product 2.</p>
+                <p>Price: Rs. 200</p>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="product2.html" class="cta-button">View Details</a>
+              
+            </section>
+        </div>
+        
+        <div id="payment-options" class="hidden">
+                <h1>Checkout</h1>
+                <button id="show-payment-options">Show Payment Options</button>
+                <div id="payment-options" class="hidden">
+                    <form action="process_payment.php" method="post">
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                        
+                        <label for="expiry">Expiry Date:</label>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                        
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        
+                        <label for="amount">Amount:</label>
+                        <input type="text" id="amount" name="amount" placeholder="Rs." required>
+                        
+                        <button type="submit">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+            </main>
+    </div>
+       
+        
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 @Campus Marketplace</p>
+            <div class="social-links">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://instagram.com/campu.sm?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
