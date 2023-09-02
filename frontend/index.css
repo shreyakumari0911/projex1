@@ -7,14 +7,14 @@ html, body, h1, h2, h3, p, ul, li, figure {
 /* Set a background color and default font styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color:#F5EBE0;
     color: #333;
     line-height: 1.6;
 }
 
 /* Style the header and navigation */
 header {
-    background-color: #333;
+    background-color:#4B5D67;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -66,18 +66,18 @@ header {
 
 .cta-button {
     display: inline-block;
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #DBA39A;
+    color:#333;
     padding: 10px 20px;
     font-size: 1.2rem;
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #ff6600;
+    background-color: #F0DBDB;
 }
 
 /* Style the featured products section */
@@ -241,7 +241,8 @@ footer {
 }
 .logo{
     font-size: 50px;
-    font-family: 'Rubik Iso', cursive;
+    font-family: 'Antonio', sans-serif;
+    /* font-family: 'Libre Baskerville', serif; */
     
 }
 
