@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="index.js"></script>
-    <title>Campus Marketplace - Home</title>
+    <title>Swap Shop - Home</title>
 
     
 
@@ -13,18 +17,22 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
-                CAMPUS MARKETPLACE
-                <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
-                  </style>
+            <div class="logo" >
+                SWAP SHOP
+                <form id="search-form">
+                    <div class="search">
+                        <input type="text" id="search-input" placeholder="Search products...">
+                        <button id="search-button">Search</button>
+                    </div>
+                </form>
             </div>
+            <div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="feedback.html">Feedback</li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="#" id="checkout-button">Checkout</a></li>
+                <li><a href="products.html">About us</a></li>
+                <li><a href="feedback.html">Cart</li>
+                <li><a href="cart.html">Checkout</a></li>
+                <li><a href="#" id="checkout-button">Profile</a></li>
                
             </ul>
         </nav>
@@ -35,7 +43,7 @@
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rubik+Iso&display=swap');
               </style>
-            <h1>Welcome to Campus Marketplace</h1>
+            <h1>Welcome to Swap Shop</h1>
             <p>Buy and sell items within your campus community.</p>
             <a href="products.html" class="cta-button">Shop Now</a>
         </div>
@@ -43,27 +51,7 @@
     
     
     <main>
-        <div class="product-row">
-            <section class="product" data-product-id="1">
-                <img src="product1.jpg" alt="Product 1">
-                <h2>Product 1</h2>
-                <p>Description of Product 1.</p>
-                <p>Price: Rs. 100</p>
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="product1.html" class="cta-button">View Details</a>
-                
-            </section>
-            
-            <section class="product" data-product-id="2">
-                <img src="product2.jpg" alt="Product 2">
-                <h2>Product 2</h2>
-                <p>Description of Product 2.</p>
-                <p>Price: Rs. 200</p>
-                <button class="add-to-cart">Add to Cart</button>
-                <a href="product2.html" class="cta-button">View Details</a>
-              
-            </section>
-        </div>
+        
         
         <div id="payment-options" class="hidden">
                 <h1>Checkout</h1>
@@ -86,7 +74,7 @@
                     </form>
                 </div>
             </div>
-            </main>
+        </main>
     </div>
        
         
@@ -94,11 +82,14 @@
     
     <footer>
         <div class="footer-content">
-            <p>&copy; 2023 @Campus Marketplace</p>
+            <p>&copy; 2023 @SWAP SHOP</p>
             <div class="social-links">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                <a href="https://instagram.com/campu.sm?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a class="account" href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                <a class="account" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a class="account" href="https://instagram.com/campu.sm?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+            <div>
+                Terms and Conditions T & C
             </div>
         </div>
     </footer>

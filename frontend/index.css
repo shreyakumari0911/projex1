@@ -7,14 +7,14 @@ html, body, h1, h2, h3, p, ul, li, figure {
 /* Set a background color and default font styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color:#F5EBE0;
     color: #333;
     line-height: 1.6;
 }
 
 /* Style the header and navigation */
 header {
-    background-color: #333;
+    background-color:#4B5D67;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -39,7 +39,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #ff9900;
+    color: #DBA39A;
 }
 
 /* Style the hero section */
@@ -66,18 +66,18 @@ header {
 
 .cta-button {
     display: inline-block;
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #DBA39A;
+    color:#333;
     padding: 10px 20px;
     font-size: 1.2rem;
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #ff6600;
+    background-color: #F0DBDB;
 }
 
 /* Style the featured products section */
@@ -123,8 +123,8 @@ header {
 .product .cta-button {
     display: block;
     margin-top: 20px;
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #DBA39A;
+    color:#333;
     padding: 8px 15px;
     font-size: 1rem;
     text-align: center;
@@ -135,7 +135,7 @@ header {
 }
 
 .product .cta-button:hover {
-    background-color: #ff6600;
+    background-color: #F0DBDB;
 }
 
 
@@ -166,7 +166,7 @@ header {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #ff9900;
+    background-color: #DBA39A;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -176,7 +176,7 @@ header {
 }
 
 .checkout button#show-payment-options:hover {
-    background-color: #ff6600;
+    background-color: #F0DBDB;
 }
 /* Your existing styles here */
 
@@ -189,7 +189,7 @@ header {
 }
 
 .product {
-    width: 48%;
+    width: 50%;
     margin-bottom: 30px;
     padding: 8px;
     background-color: #fff;
@@ -208,7 +208,7 @@ main {
 }
 /* Style the footer */
 footer {
-    background-color: #333;
+    background-color: #4B5D67;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -241,8 +241,105 @@ footer {
 }
 .logo{
     font-size: 50px;
-    font-family: 'Rubik Iso', cursive;
+    font-family: 'Antonio', sans-serif;
+    /* font-family: 'Libre Baskerville', serif; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin-left: 200px;
     
 }
+.product-row .add-to-cart  {
+    background-color:#F5EBE0;
+    color: #333;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    margin-left: 42% ;
+    
 
+}
+.add-to-cart:hover {
+    background-color: #F0DBDB;
+}
 
+.account {
+    color: bisque;
+    font-size:1 rem;
+}
+.fa-brands{
+    color: #F5EBE0;
+    
+}
+.round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #4B5D67 solid;
+    padding: 5px 75px 5px 25px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 5;
+    display:flex;
+    margin-left: 320px;
+
+}
+
+.corner {
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background:#4B5D67; /* Set the bg image here. with "no-repeat" */
+    margin-left: 320px;
+    cursor: pointer;
+}
+.search {
+    position: relative;
+    width: 190px;
+    height: 30px;
+}
+/* Your existing styles here */
+
+/* Style the search container */
+.search {
+    display: flex;
+    align-items:center;
+    margin-left:180%;
+}
+
+/* Style the search input field */
+#search-input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Style the search button */
+#search-button {
+    padding: 10px 20px;
+    background-color: #03170f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Style the search button on hover */
+#search-button:hover {
+    background-color: #083149;
+}
