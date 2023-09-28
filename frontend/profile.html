@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - SWAP SHOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+    <main class="profile">
+        <h1>User Profile</h1>
+        <div class="profile-details">
+            <p><strong>Username:</strong> <span id="username">JohnDoe</span></p>
+            <p><strong>Email:</strong> <span id="email">johndoe@example.com</span></p>
+            <p><strong>Phone Number:</strong> <span id="phone">123-456-7890</span></p>
+        </div>
+    </main>
+
+   
+
+    <script src="PROFILE.JS"></script>
+    <style>
+    
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.profile-details strong {
+    font-weight: bold;
+}
+
+
+
+
+
+
+</style>
+</body>
+</html>
