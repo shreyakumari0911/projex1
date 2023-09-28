@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-var connectionUrl = "mongodb://localhost:27017"
+var connectionUrl = "mongodb://localhost:27017/TheSwapShop"
 const express = require('express')
 const app = express()
 
@@ -17,9 +17,9 @@ app.listen(port,()=>{
     console.log(`Listening to port ${port}`)
 })
 app.use(express.urlencoded({extended:true}))
-app.set("view engine","ejs")
-app.get("/index",(req,res)=>{
-    res.render("index")
+app.set("view engine","html")
+app.get("/sellerpage",(req,res)=>{
+    res.render("sellerpage")
 })
 const UserModel = require("../models/user")
 app.post("/api/user",(req,res)=>{
